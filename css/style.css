@@ -1,0 +1,237 @@
+body {
+  background-color: #000000;
+  font-family: "Open Sans";
+  height: 100%;
+  color: #fffafa;
+  overflow: hidden;
+  /* position: relative; */
+}
+
+#top-bar {
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 20px;
+}
+
+#top-bar span {
+  /* border: 1px solid white; */
+  font-family: "Open Sans Condensed";
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+#top-bar .line {
+  /* border-top: 1px solid white; */
+  width: 100%;
+  background-color: #fffafa;
+  margin: 0px 15px;
+  border-radius: 5px;
+}
+
+#typography {
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0px 100px 0px;
+  margin-top: 15vh;
+}
+
+#typography .company {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+#typography .coming-soon {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 68px;
+  text-align: center;
+}
+
+#notify {
+  background: rgba(217, 217, 217, 0.5);
+  border-radius: 10px;
+  padding: 4px 4px 4px 20px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+#notify input {
+  background-color: transparent;
+  color: #fffafa;
+  border: none;
+  outline: none;
+  width: 200px;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: "Open Sans Condensed";
+  color: #fffafa;
+  opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: "Open Sans Condensed";
+  color: #fffafa;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  font-family: "Open Sans Condensed";
+  color: #fffafa;
+}
+
+#notify button {
+  color: #fffafa;
+  background-color: #004aad;
+  border-radius: 10px;
+  padding: 8px 20px;
+  border: none;
+  font-size: 0.8rem;
+}
+
+#notify button:hover {
+  background-color: #003b8b;
+}
+
+#socials-and-contact {
+  /* border: 1px white solid; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#socials-and-contact span {
+  font-family: "Open Sans Condensed";
+}
+
+#socials-and-contact .links {
+  margin: 15px;
+}
+
+#socials-and-contact .links a {
+  text-decoration: none;
+  margin: 0px 10px;
+}
+/* #socials-and-contact a img { */
+/* } */
+
+#company-logo {
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  bottom: -10%;
+}
+
+#company-logo .company-logo-img {
+  position: relative;
+  right: -25%;
+  bottom: 10%;
+}
+
+/* Tablets and onwards */
+@media screen and (min-width: 481px) {
+  #socials-and-contact {
+    left: 0;
+    right: auto;
+  }
+}
+
+/* iPads, Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #typography .company {
+    font-size: 25px;
+  }
+
+  #typography .coming-soon {
+    font-size: 60px;
+  }
+
+  #company-logo .company-logo-img {
+    width: 500px;
+  }
+
+  #notify {
+    width: 350px;
+  }
+  #notify input {
+    width: 250px;
+  }
+}
+
+/* Small screens, laptops, and onwards */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  #typography .company {
+    font-size: 1.3rem;
+  }
+
+  #typography .coming-soon {
+    font-size: 3.1rem;
+  }
+
+  #company-logo .company-logo-img {
+    width: 50vw;
+  }
+
+  #notify {
+    width: 350px;
+  }
+  /* #notify input { */
+  /*   width: 200px; */
+  /* } */
+}
+
+@media screen and (min-width: 1024px) {
+  #typography {
+    margin-top: 200px;
+  }
+
+  #typography .company {
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
+
+  #typography .coming-soon {
+    font-size: 3.5rem;
+  }
+
+  #company-logo .company-logo-img {
+    width: 40vw;
+  }
+
+  #notify {
+    width: 500px;
+    padding: 4px 4px 4px 20px;
+  }
+
+  #notify input {
+    width: 370px;
+  }
+  ::placeholder {
+    font-size: 0.9rem;
+  }
+  :-ms-input-placeholder {
+    font-size: 0.9rem;
+  }
+  ::-ms-input-placeholder {
+    font-size: 0.9rem;
+  }
+
+  #notify button {
+    padding: 10px 30px;
+  }
+}
