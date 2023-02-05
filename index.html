@@ -11,9 +11,15 @@
 
         gtag('config', 'G-32W5B6ZZ7C');
     </script>
-    <title></title>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <title>My Choice Salon | Coming Soon</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="It's not just about lifting heavy weights, it's a lifestyle.">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet">
@@ -35,22 +41,23 @@
     </div>
 
     <!-- notify input -->
-    <div id="notify">
-        <input type="text" name="notify" class="notify-input" placeholder="Please enter your email address">
-        <button type="submit">Notify Me</button>
-    </div>
+    <!-- <form id="notify" name="notify" action="https://site-launch-notify.my-choice.workers.dev" method="post"> -->
+    <!--     <input type="email" name="email" class="notify-input" placeholder="Please enter your email address"> -->
+    <!--     <div class="cf-turnstile" data-sitekey="0x4AAAAAAACVEFtA4SPmqRhp"></div> -->
+    <!--     <button type="submit">Notify Me</button> -->
+    <!-- </form> -->
 
     <!-- socials and contact -->
     <div id="socials-and-contact">
         <span>Find Us At</span>
         <div class="links">
-            <a href="#">
-                <img src="assets/facebook.svg" alt="facebook-logo">
-            </a>
-            <a href="#">
+            <!-- <a href="#"> -->
+            <!--     <img src="assets/facebook.svg" alt="facebook-logo"> -->
+            <!-- </a> -->
+            <a href="https://instagram.com/mychoice.salon_" target="_blank">
                 <img src="assets/instagram.svg" alt="instagram-logo">
             </a>
-            <a href="mailto:abc@example.com?subject=Contact&body=Message">
+            <a href="mailto:hello@mychoicesalon.com?subject=Contact&body=Message" target="_blank">
                 <img src="assets/mail.svg" alt="mail-logo">
             </a>
         </div>
@@ -61,5 +68,6 @@
         <img class="company-logo-img" src="assets/logo.svg" alt="company-logo">
     </div>
 </body>
+<script src="js/index.js"></script>
 
 </html>
